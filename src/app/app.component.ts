@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { TourService, Tour} from './tours.Service';
+import { TourService, Tour} from './tours.service';
 
 @Component({
   selector: 'app-root',
