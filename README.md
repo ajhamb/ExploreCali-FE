@@ -34,9 +34,13 @@ docker login
 
 docker push ajhambdock/explorecali-fe:latest
 
-
+### Run from Docker Hub
 docker run -d -it -p 4200:80/tcp --name explorecali-fe ajhambdock/explorecali-fe:latest
 
+### Run from GCR
+docker run -d -it -p 4200:80/tcp --name explorecali-fe gcr.io/explorecalicicd/explorecali-fe:latest
+
+### Inspect container
 docker inspect --format '{{ .NetworkSettings.IPAddress }}' <<container>>
 
 
